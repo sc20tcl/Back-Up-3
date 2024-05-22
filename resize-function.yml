@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://localhost:8080
+functions:
+  resize-function:
+    lang: python3-http-debian
+    handler: ./resize-function
+    image: snzywgwm13/resize-function:latest
+   

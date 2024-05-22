@@ -1,0 +1,4 @@
+Flask
+Pillow
+azure-storage-blob
+werkzeug

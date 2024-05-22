@@ -1,0 +1,149 @@
+-------------------------------------------------
+TEST: 1 users, 1 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 1/1 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 1/1 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 1/1 successful
+Duration: 15.00 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 1 users, 10 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 10/10 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 10/10 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 10/10 successful
+Duration: 69.36 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 1 users, 50 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 50/50 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 50/50 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 50/50 successful
+Duration: 346.29 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 1 users, 100 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 100/100 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 100/100 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 100/100 successful
+Duration: 685.77 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 10 users, 1 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 10/10 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 10/10 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 10/10 successful
+Duration: 37.36 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 10 users, 10 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 100/100 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 100/100 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 100/100 successful
+Duration: 96.68 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 10 users, 50 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 500/500 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 500/500 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 500/500 successful
+Duration: 350.01 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 10 users, 100 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 999/1000 successful
+    - Error: Status code: 500
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 1000/1000 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 1000/1000 successful
+Duration: 701.11 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 50 users, 1 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 50/50 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 50/50 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 50/50 successful
+Duration: 28.90 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 50 users, 10 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 500/500 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 500/500 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 500/500 successful
+Duration: 169.51 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 50 users, 50 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 2499/2500 successful
+    - Error: Status code: 500
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 2499/2500 successful
+    - Error: Status code: 400
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 2499/2500 successful
+    - Error: Status code: 500
+Duration: 416.54 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 50 users, 100 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 4999/5000 successful
+    - Error: HTTPSConnectionPool(host='imageprocessorcw.azurewebsites.net', port=443): Max retries exceeded with url: /api/maskimage?clientId=blobs_extension (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10ab059c0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 4998/5000 successful
+    - Error: HTTPSConnectionPool(host='imageprocessorcw.azurewebsites.net', port=443): Max retries exceeded with url: /api/resize?clientId=blobs_extension (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10554b340>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 5000/5000 successful
+Duration: 686.06 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 100 users, 1 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 100/100 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 100/100 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 100/100 successful
+Duration: 13.98 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 100 users, 10 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 1000/1000 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 1000/1000 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 1000/1000 successful
+Duration: 116.15 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 100 users, 50 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 5000/5000 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 5000/5000 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 5000/5000 successful
+Duration: 415.21 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 100 users, 100 requests
+-------------------------------------------------
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/maskimage?clientId=blobs_extension: 10000/10000 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/resize?clientId=blobs_extension: 10000/10000 successful
+- Function URL: https://imageprocessorcw.azurewebsites.net/api/posterimage?clientId=blobs_extension: 9999/10000 successful
+    - Error: HTTPSConnectionPool(host='imageprocessorcw.azurewebsites.net', port=443): Max retries exceeded with url: /api/posterimage?clientId=blobs_extension (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x128101ae0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Duration: 690.19 seconds

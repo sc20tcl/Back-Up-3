@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: teastore-ingress
+  namespace: default
+  annotations:
+      nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx  
+  rules:
+  - host: "teastore12345678765.com"  # Wildcard to accept any host
+    http:
+      paths:
+      - path: /app
+        pathType: Prefix
+        backend:
+          service:
+            name: teastore-webui
+            port:
+              number: 8080

@@ -1,0 +1,42 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/ovickers001/Blockchain-Carpool/contracts/car_pooling.sol": {
+      "lastModificationDate": 1715380688257,
+      "contentHash": "2e936b5f5572851ab978dd33d031f2b6",
+      "sourceName": "contracts/car_pooling.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CarPooling",
+        "CarPoolingCoordination"
+      ]
+    }
+  }
+}

@@ -1,0 +1,127 @@
+
+-------------------------------------------------
+TEST: 1 users, 1 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 1/1 successful
+- Function URL: http://localhost:8080/function/resize-function: 1/1 successful
+- Function URL: http://localhost:8080/function/poster-function: 1/1 successful
+Duration: 1.98 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 1 users, 10 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 10/10 successful
+- Function URL: http://localhost:8080/function/resize-function: 10/10 successful
+- Function URL: http://localhost:8080/function/poster-function: 10/10 successful
+Duration: 19.41 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 1 users, 50 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 50/50 successful
+- Function URL: http://localhost:8080/function/resize-function: 50/50 successful
+- Function URL: http://localhost:8080/function/poster-function: 50/50 successful
+Duration: 96.76 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 1 users, 100 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 100/100 successful
+- Function URL: http://localhost:8080/function/resize-function: 100/100 successful
+- Function URL: http://localhost:8080/function/poster-function: 100/100 successful
+Duration: 188.74 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 10 users, 1 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 10/10 successful
+- Function URL: http://localhost:8080/function/resize-function: 10/10 successful
+- Function URL: http://localhost:8080/function/poster-function: 10/10 successful
+Duration: 13.32 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 10 users, 10 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 100/100 successful
+- Function URL: http://localhost:8080/function/resize-function: 100/100 successful
+- Function URL: http://localhost:8080/function/poster-function: 100/100 successful
+Duration: 113.40 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 10 users, 50 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 500/500 successful
+- Function URL: http://localhost:8080/function/resize-function: 500/500 successful
+- Function URL: http://localhost:8080/function/poster-function: 500/500 successful
+Duration: 567.37 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 10 users, 100 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 1000/1000 successful
+- Function URL: http://localhost:8080/function/resize-function: 1000/1000 successful
+- Function URL: http://localhost:8080/function/poster-function: 1000/1000 successful
+Duration: 1134.46 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 50 users, 1 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 25/50 successful
+    - Error: Status code: 500
+- Function URL: http://localhost:8080/function/resize-function: 50/50 successful
+- Function URL: http://localhost:8080/function/poster-function: 50/50 successful
+Duration: 34.77 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 50 users, 10 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 25/500 successful
+    - Error: Status code: 500
+- Function URL: http://localhost:8080/function/resize-function: 500/500 successful
+- Function URL: http://localhost:8080/function/poster-function: 500/500 successful
+Duration: 319.93 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 50 users, 50 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 0/2500 successful
+    - Error: Status code: 500
+- Function URL: http://localhost:8080/function/resize-function: 2500/2500 successful
+- Function URL: http://localhost:8080/function/poster-function: 2500/2500 successful
+Duration: 1579.46 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 50 users, 100 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 0/5000 successful
+    - Error: Status code: 500
+- Function URL: http://localhost:8080/function/resize-function: 4307/5000 successful
+    - Error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+- Function URL: http://localhost:8080/function/poster-function: 4306/5000 successful
+    - Error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+Duration: 3698.51 seconds
+Waiting 30 seconds before the next test...
+
+-------------------------------------------------
+TEST: 100 users, 1 requests
+-------------------------------------------------
+- Function URL: http://localhost:8080/function/mask-function: 0/100 successful
+    - Error: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /function/mask-function (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x102b7a0b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+- Function URL: http://localhost:8080/function/resize-function: 0/100 successful
+    - Error: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /function/resize-function (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x102de3d30>: Failed to establish a new connection: [Errno 61] Connection refused'))
+- Function URL: http://localhost:8080/function/poster-function: 0/100 successful
+    - Error: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /function/poster-function (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x102dc9060>: Failed to establish a new connection: [Errno 61] Connection refused'))
+Duration: 0.23 seconds
+Waiting 30 seconds before the next test...
+```

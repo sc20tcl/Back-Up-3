@@ -1,0 +1,4 @@
+Pillow
+azure-storage-blob
+numpy
+opencv-python
